@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.RegisterFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="32dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="205dp"
+                    android:layout_height="205dp"
+                    android:layout_marginTop="29.5dp"
+                    android:background="@color/colorAccent"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="32dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/profile" />
+
+                <TextView
+                    android:id="@+id/fname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="62dp"
+                    android:text="First Name :"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+                <TextView
+                    android:id="@+id/lname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:text="Last Name :"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/fname"
+                    app:layout_constraintTop_toBottomOf="@+id/fname" />
+
+                <EditText
+                    android:id="@+id/fname_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="32dp"
+                    android:ems="10"
+                    android:hint="Joe"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/fname"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+                <TextView
+                    android:id="@+id/mname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:text="Middle Name :"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/lname"
+                    app:layout_constraintTop_toBottomOf="@+id/lname" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="38dp"
+                    android:text="Address :"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/mname"
+                    app:layout_constraintTop_toBottomOf="@+id/mname" />
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:text="Gender :"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/address"
+                    app:layout_constraintTop_toBottomOf="@+id/address" />
+
+                <TextView
+                    android:id="@+id/dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="DOB :"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/gender"
+                    app:layout_constraintTop_toBottomOf="@+id/gender" />
+
+                <TextView
+                    android:id="@+id/mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="Mobile :"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/dob"
+                    app:layout_constraintTop_toBottomOf="@+id/dob" />
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="34dp"
+                    android:text="Username :"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/mobile"
+                    app:layout_constraintTop_toBottomOf="@+id/mobile" />
+
+                <TextView
+                    android:id="@+id/password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="34dp"
+                    android:text="Password :"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/email"
+                    app:layout_constraintTop_toBottomOf="@+id/email" />
+
+                <EditText
+                    android:id="@+id/lname_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:ems="10"
+                    android:hint="Biden"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="@+id/fname_text"
+                    app:layout_constraintStart_toStartOf="@+id/fname_text"
+                    app:layout_constraintTop_toBottomOf="@+id/fname_text" />
+
+                <EditText
+                    android:id="@+id/mname_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:ems="10"
+                    android:hint="James"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="@+id/lname_text"
+                    app:layout_constraintStart_toStartOf="@+id/lname_text"
+                    app:layout_constraintTop_toBottomOf="@+id/lname_text" />
+
+                <Button
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="13dp"
+                    android:text="Get My Location"
+                    app:layout_constraintStart_toEndOf="@+id/mname"
+                    app:layout_constraintTop_toBottomOf="@+id/mname_text" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="180dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="@+id/location"
+                    app:layout_constraintTop_toBottomOf="@+id/location">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Male"
+                        android:textAlignment="textStart"
+                        android:textSize="16sp" />
+
+                    <Switch
+                        android:id="@+id/gender_switch"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Female"
+                        android:textAlignment="textEnd"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:ems="10"
+                    android:hint="29/02/2020"
+                    android:inputType="date"
+                    app:layout_constraintEnd_toEndOf="@+id/mname_text"
+                    app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+                <EditText
+                    android:id="@+id/mobile_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:ems="10"
+                    android:hint="9021982944"
+                    android:inputType="phone"
+                    app:layout_constraintEnd_toEndOf="@+id/date"
+                    app:layout_constraintStart_toStartOf="@+id/date"
+                    app:layout_constraintTop_toBottomOf="@+id/date" />
+
+                <EditText
+                    android:id="@+id/email_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:ems="10"
+                    android:hint="User616"
+                    android:inputType="textEmailAddress"
+                    app:layout_constraintEnd_toEndOf="@+id/mobile_text"
+                    app:layout_constraintStart_toStartOf="@+id/mobile_text"
+                    app:layout_constraintTop_toBottomOf="@+id/mobile_text" />
+
+                <EditText
+                    android:id="@+id/password_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:ems="10"
+                    android:hint="********"
+                    android:inputType="textPassword"
+                    app:layout_constraintEnd_toEndOf="@+id/email_text"
+                    app:layout_constraintStart_toStartOf="@+id/email_text"
+                    app:layout_constraintTop_toBottomOf="@+id/email_text" />
+
+                <Button
+                    android:id="@+id/register_btn"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="108dp"
+                    android:background="@color/colorAccent"
+                    android:text="REGISTER"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/password"
+                    app:layout_constraintTop_toBottomOf="@+id/password_text" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="175dp"
+                    android:clickable="true"
+                    android:src="@mipmap/camera"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+                <TextView
+                    android:id="@+id/myaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/location"
+                    tools:layout_editor_absoluteY="473dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Appointment Booking System</string>
+    <string name="tab_text_1">Log in</string>
+    <string name="tab_text_2">Register</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="joe_biden">Joe Biden</string>
+    <string name="log_out">LOG OUT</string>
+    <string name="my_appointments">My Appointments</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="doctor_name">Doctor Name</string>
+    <string name="reason">Reason</string>
+    <string name="todo">TODO</string>
+
+    <string-array name="doctor_array">
+        <item> Select </item>
+        <item>Dr. Jayesh Pandey</item>
+        <item>Dr. Prem Patel</item>
+        <item>Dr. Dheeraj Poojary</item>
+    </string-array>
+
+    <string-array name="date_array">
+        <item> Select </item>
+        <item>11/11/2020</item>
+        <item>12/11/2020</item>
+        <item>13/11/2020</item>
+    </string-array>
+
+    <string-array name="time_array">
+        <item> Select </item>
+        <item>  10:00 AM </item>
+        <item>  11:00 AM </item>
+        <item> 12:00 AM </item>
+        <item> 04:00 PM </item>
+        <item> 05:00 PM </item>
+        <item> 06:00 PM </item>
+        <item> 07:00 PM </item>
+    </string-array>
+
+
+</resources>
